@@ -1,13 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: rgba(109, 10, 79, 0.836);
-  height: 100vh;
+  font-family: arial;
+  font-size: 18px;
+  background-color:#2596be;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  overflow-x: hidden;
   align-items: center;
   gap: 50px;
 
-  height: 100vh;
+  
 }
 
 section {
@@ -16,21 +23,23 @@ section {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  width: 100%;
+  height: 100vh;
 }
 
 .container {
-  background-color: rgb(155, 19, 209);
+  background-color:  #3b6da5;
   width: 300px;
   height: 450px;
   overflow-y: scroll;
-  border: 9px solid #5a035a65;
+  border: 9px solid  #325573;
   border-radius: 15px;
-  box-shadow: 10px 10px 20px #550369f1;
+  box-shadow: 10px 10px 20px #153364;
   transition: all 0.5s ease;
 }
 
 .container:hover {
-  box-shadow: 15px 15px 25px #be7390;
+  box-shadow: 15px 15px 25px #a2d6f2;
 }
 
 h2 {
@@ -62,35 +71,20 @@ h2 {
   height: 100vh;
 }
 
+
 .tag-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
   width: 60%;
-  background-color: antiquewhite;
+  background-color: #8c8cc4;
   border-radius: 10px;
-}
-.tag-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  width: 60%;
-  background-color: antiquewhite;
-  border-radius: 10px;
-  box-shadow: 10px 10px 20px #550369f1;
+  box-shadow: 10px 10px 20px #153364 ;
   transition: all 0.5s ease;
 }
-.tag-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  width: 60%;
-  background-color: antiquewhite;
-  border-radius: 10px;
-}
+
+
 
 
 .tag-title {
@@ -106,7 +100,7 @@ h2 {
   cursor: pointer;
 }
 .tag-container:hover {
-  box-shadow: 15px 15px 25px #be7390;
+  box-shadow: 15px 15px 25px ;
 }
 
 .tag-container:hover .tag-description {
@@ -128,4 +122,30 @@ h2 {
 .tag-description {
   display: none;
   text-align: left;
+}
+
+.welcome { 
+position: relative; 
+width: 100%; 
+height: 100vh; 
+overflow: hidden; 
+} 
+.background-video { 
+position: absolute; 
+top: 50%; 
+left: 50%; 
+min-width: 100%; 
+min-height: 100%; 
+width: auto; 
+height: auto; 
+z-index: -1; 
+transform: translate(-50%,-50%); 
+object-fit: cover; 
+} 
+.content { 
+position: relative; 
+z-index: 1; 
+color: #883a8f; 
+text-align: center; 
+font-size: 120px;
 }
